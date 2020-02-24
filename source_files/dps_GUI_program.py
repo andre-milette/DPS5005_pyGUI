@@ -11,9 +11,15 @@ from dps_modbus import Serial_modbus
 from dps_modbus import Dps5005
 from dps_modbus import Import_limits
 
-from PyQt5.QtCore import pyqtSlot, pyqtSignal, QRunnable, QThreadPool, QTimer, QThread, QCoreApplication, QObject, QMutex, Qt
-from PyQt5.QtWidgets import QApplication, QMainWindow, QSlider, QAction, QFileDialog, QGraphicsView
-from PyQt5.QtGui import QIcon, QFont
+# from PyQt5.QtCore import pyqtSlot, pyqtSignal, QRunnable, QThreadPool, QTimer, QThread, QCoreApplication, QObject, QMutex, Qt
+# from PyQt5.QtWidgets import QApplication, QMainWindow, QSlider, QAction, QFileDialog, QGraphicsView
+# from PyQt5.QtGui import QIcon, QFont
+
+from PyQt5.QtCore import pyqtSlot, pyqtSignal, QRunnable, QThreadPool, QTimer,  QObject, QMutex, Qt
+from PyQt5.QtWidgets import QApplication, QMainWindow,  QFileDialog 
+from PyQt5.QtGui import QFont
+
+
 from PyQt5.uic import loadUi
 QApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
 

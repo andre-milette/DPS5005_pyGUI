@@ -248,7 +248,7 @@ if __name__ == '__main__':
 	dps = Dps5005(ser, limits)
 	try:
 		while True:
-			route = raw_input("Enter command: ")
+			route = input("Enter command: ")
 			if route == "q":
 				quit()
 			elif route == "read":
@@ -287,32 +287,32 @@ if __name__ == '__main__':
 				print("s_ini       :  %6s" % dps.s_ini())
 				
 			elif route == "vset":
-				value = raw_input("Enter value: ")
+				value = input("Enter value: ")
 				dps.voltage_set('w', float(value))
 			elif route == "iset":
-				value = raw_input("Enter value: ")
+				value = input("Enter value: ")
 				dps.current_set('w', float(value))
 			elif route == "lock":
-				value = raw_input("Enter value: ")
+				value = input("Enter value: ")
 				dps.lock('w', float(value))
 			elif route == "on":
 				dps.onoff('w', 1)
 			elif route == "off":
 				dps.onoff('w', 0)		
 			elif route == "bled":
-				value = raw_input("Enter value: ")
+				value = input("Enter value: ")
 				dps.b_led('w', float(value))		
 			elif route == "sovp":
-				value = raw_input("Enter value: ")
+				value = input("Enter value: ")
 				dps.s_ovp('w', float(value))
 			elif route == "socp":
-				value = raw_input("Enter value: ")
+				value = input("Enter value: ")
 				dps.s_ocp('w', float(value))
 			elif route == "sopp":
-				value = raw_input("Enter value: ")
+				value = input("Enter value: ")
 				dps.s_opp('w', float(value))	
 			elif route == "sini":
-				value = raw_input("Enter value: ")
+				value = input("Enter value: ")
 				dps.s_ini('w', float(value))
 			elif route == "m":	
 				for i in dir(dps):
